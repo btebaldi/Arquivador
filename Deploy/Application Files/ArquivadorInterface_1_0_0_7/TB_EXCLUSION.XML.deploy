@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<ArquivadorDS>
+  <TB_EXCLUSION>
+    <IdExclusion>1</IdExclusion>
+    <Path>c:\Dir1</Path>
+  </TB_EXCLUSION>
+  <TB_EXCLUSION>
+    <IdExclusion>2</IdExclusion>
+    <Path>c:\Dir2</Path>
+  </TB_EXCLUSION>
+  <TB_EXCLUSION>
+    <IdExclusion>3</IdExclusion>
+    <Path>c:\Dir3</Path>
+  </TB_EXCLUSION>
+</ArquivadorDS>
