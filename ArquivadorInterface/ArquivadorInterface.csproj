@@ -134,9 +134,9 @@
       <Project>{a2c4bbe9-66d7-4b3f-b3f0-2bb0b967fb8f}</Project>
       <Name>ArquivadorConsole</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Arquivador\Arquivador.csproj">
+    <ProjectReference Include="..\ArquivadorHandler\ArquivadorHandler.csproj">
       <Project>{928cf37d-7441-406e-aff5-477c5d64f6ca}</Project>
-      <Name>Arquivador</Name>
+      <Name>ArquivadorHandler</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -81,9 +81,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Arquivador\Arquivador.csproj">
+    <ProjectReference Include="..\ArquivadorHandler\ArquivadorHandler.csproj">
       <Project>{928cf37d-7441-406e-aff5-477c5d64f6ca}</Project>
-      <Name>Arquivador</Name>
+      <Name>ArquivadorHandler</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
