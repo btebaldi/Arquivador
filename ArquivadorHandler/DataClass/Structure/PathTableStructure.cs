@@ -4,37 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Arquivador.DataClass.Structure
+namespace ArquivadorHandler.DataClass.Structure
 {
     public abstract class PathTableStructure
     {
         public SchemaStruct Schema;
-
+        
         #region "Constructors"
-        public PathTableStructure(string ObjectName, string Id, string Path)
+        public PathTableStructure()
         {
-            // Inicializacao do Schema
+
             Schema = new SchemaStruct();
-            Schema.ObjectName = ObjectName;
-            Schema.Id = Id;
-            Schema.Path = Path;
+            Schema.ObjectName = "";
+            Schema.Id = "Id";
+            Schema.Path = "Path";
 
             // Inicializacao das variaveis
-            _IdOrigin = 0;
+            _Id = 0;
             _Path = "";
         }
         #endregion
 
         #region "Private fields"
-        private int _IdOrigin;
+        private int _Id;
         private string _Path;
         #endregion
 
         #region "Column Properties"
         public int Id
         {
-            get { return _IdOrigin; }
-            set { _IdOrigin = value; }
+            get { return _Id; }
+            set { _Id = value; }
         }
 
         public string Path

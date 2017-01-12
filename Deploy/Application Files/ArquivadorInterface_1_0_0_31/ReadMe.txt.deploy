@@ -1,0 +1,1 @@
+﻿for console application execute the windows form with "-console" argument.

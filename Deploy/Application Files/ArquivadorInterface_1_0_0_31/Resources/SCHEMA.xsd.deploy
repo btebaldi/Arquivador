@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ArquivadorDS" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ArquivadorDS" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="ArquivadorDS" msprop:Generator_UserDSName="ArquivadorDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_EXCLUSION" msprop:Generator_TableClassName="TB_EXCLUSIONDataTable" msprop:Generator_TableVarName="tableTB_EXCLUSION" msprop:Generator_TablePropName="TB_EXCLUSION" msprop:Generator_RowDeletingName="TB_EXCLUSIONRowDeleting" msprop:Generator_RowChangingName="TB_EXCLUSIONRowChanging" msprop:Generator_RowEvHandlerName="TB_EXCLUSIONRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_EXCLUSIONRowDeleted" msprop:Generator_UserTableName="TB_EXCLUSION" msprop:Generator_RowChangedName="TB_EXCLUSIONRowChanged" msprop:Generator_RowEvArgName="TB_EXCLUSIONRowChangeEvent" msprop:Generator_RowClassName="TB_EXCLUSIONRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdExclusion" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIdExclusion" msprop:Generator_ColumnPropNameInRow="IdExclusion" msprop:Generator_ColumnPropNameInTable="IdExclusionColumn" msprop:Generator_UserColumnName="IdExclusion" type="xs:int" minOccurs="0" />
+              <xs:element name="Path" msprop:Generator_ColumnVarNameInTable="columnPath" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnPropNameInTable="PathColumn" msprop:Generator_UserColumnName="Path" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TB_ORIGIN" msprop:Generator_TableClassName="TB_ORIGINDataTable" msprop:Generator_TableVarName="tableTB_ORIGIN" msprop:Generator_TablePropName="TB_ORIGIN" msprop:Generator_RowDeletingName="TB_ORIGINRowDeleting" msprop:Generator_RowChangingName="TB_ORIGINRowChanging" msprop:Generator_RowEvHandlerName="TB_ORIGINRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_ORIGINRowDeleted" msprop:Generator_UserTableName="TB_ORIGIN" msprop:Generator_RowChangedName="TB_ORIGINRowChanged" msprop:Generator_RowEvArgName="TB_ORIGINRowChangeEvent" msprop:Generator_RowClassName="TB_ORIGINRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdOrigin" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIdOrigin" msprop:Generator_ColumnPropNameInRow="IdOrigin" msprop:Generator_ColumnPropNameInTable="IdOriginColumn" msprop:Generator_UserColumnName="IdOrigin" type="xs:int" />
+              <xs:element name="Path" msprop:Generator_ColumnVarNameInTable="columnPath" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnPropNameInTable="PathColumn" msprop:Generator_UserColumnName="Path" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

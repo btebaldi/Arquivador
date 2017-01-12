@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Windows Desktop
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquivadorHandler", "ArquivadorHandler\ArquivadorHandler.csproj", "{928CF37D-7441-406E-AFF5-477C5D64F6CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquivadorConsole", "ArquivadorConsole\ArquivadorConsole.csproj", "{A2C4BBE9-66D7-4B3F-B3F0-2BB0B967FB8F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquivadorInterface", "ArquivadorInterface\ArquivadorInterface.csproj", "{660997B3-8F19-47BA-987D-A759DCE68350}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquivadorUI", "ArquivadorInterface\ArquivadorUI.csproj", "{660997B3-8F19-47BA-987D-A759DCE68350}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		{928CF37D-7441-406E-AFF5-477C5D64F6CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{928CF37D-7441-406E-AFF5-477C5D64F6CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{928CF37D-7441-406E-AFF5-477C5D64F6CA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A2C4BBE9-66D7-4B3F-B3F0-2BB0B967FB8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2C4BBE9-66D7-4B3F-B3F0-2BB0B967FB8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2C4BBE9-66D7-4B3F-B3F0-2BB0B967FB8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2C4BBE9-66D7-4B3F-B3F0-2BB0B967FB8F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{660997B3-8F19-47BA-987D-A759DCE68350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{660997B3-8F19-47BA-987D-A759DCE68350}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{660997B3-8F19-47BA-987D-A759DCE68350}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -1,4 +1,4 @@
-﻿namespace ArquivadorInterface
+﻿namespace ArquivadorUI
 {
     partial class PreviewFiles
     {

@@ -7,8 +7,8 @@
     <ProjectGuid>{928CF37D-7441-406E-AFF5-477C5D64F6CA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Arquivador</RootNamespace>
-    <AssemblyName>Arquivador</AssemblyName>
+    <RootNamespace>ArquivadorHandler</RootNamespace>
+    <AssemblyName>ArquivadorHandler</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,35 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessClasses\Archiver.cs" />
-    <Compile Include="BusinessClasses\ArchiverConfiguration.cs" />
-    <Compile Include="BusinessClasses\ArchiverConfigurationException.cs" />
-    <Compile Include="BusinessClasses\Exclusion.cs" />
-    <Compile Include="BusinessClasses\Origin.cs" />
-    <Compile Include="BusinessClasses\ArchiverChooser.cs" />
-    <Compile Include="DataClass\PathTableDC.cs" />
-    <Compile Include="DataClass\Structure\ExclusionStructure.cs" />
+    <Compile Include="BusinessClass\Archiver.cs" />
+    <Compile Include="Config\ArchiverConfig.cs" />
+    <Compile Include="Config\ArchiverConfigurationException.cs" />
+    <Compile Include="BusinessClass\FileChooser.cs" />
     <Compile Include="DataClass\Structure\PathTableStructure.cs" />
-    <Compile Include="DataClass\Structure\OriginStructure.cs" />
-    <Compile Include="DataLayer\DataLayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="SETTINGS.XML">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="TB_EXCLUSION.XML">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="TB_EXCLUSION_SCHEMA.XML">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="TB_ORIGIN.XML">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="TB_ORIGIN_SCHEMA.XML">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
