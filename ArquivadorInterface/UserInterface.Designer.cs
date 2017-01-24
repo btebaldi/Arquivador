@@ -43,11 +43,12 @@
             this.btn_browseHistDir = new System.Windows.Forms.Button();
             this.tb_historyTimeDays = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btn_Preview = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_Archive = new System.Windows.Forms.Button();
             this.tb_historyDir = new System.Windows.Forms.TextBox();
+            this.btn_Preview = new System.Windows.Forms.Button();
+            this.btn_Archive = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.btn_viewLog = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -209,6 +210,25 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "History Time (days)";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "History Directory";
+            // 
+            // tb_historyDir
+            // 
+            this.tb_historyDir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tb_historyDir.Enabled = false;
+            this.tb_historyDir.Location = new System.Drawing.Point(135, 25);
+            this.tb_historyDir.Name = "tb_historyDir";
+            this.tb_historyDir.Size = new System.Drawing.Size(139, 20);
+            this.tb_historyDir.TabIndex = 0;
+            // 
             // btn_Preview
             // 
             this.btn_Preview.Location = new System.Drawing.Point(12, 430);
@@ -218,15 +238,6 @@
             this.btn_Preview.Text = "Preview";
             this.btn_Preview.UseVisualStyleBackColor = true;
             this.btn_Preview.Click += new System.EventHandler(this.previewButton_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "History Directory";
             // 
             // btn_Archive
             // 
@@ -239,15 +250,15 @@
             this.btn_Archive.UseVisualStyleBackColor = true;
             this.btn_Archive.Click += new System.EventHandler(this.archive_Click);
             // 
-            // tb_historyDir
+            // btn_viewLog
             // 
-            this.tb_historyDir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tb_historyDir.Enabled = false;
-            this.tb_historyDir.Location = new System.Drawing.Point(135, 25);
-            this.tb_historyDir.Name = "tb_historyDir";
-            this.tb_historyDir.Size = new System.Drawing.Size(139, 20);
-            this.tb_historyDir.TabIndex = 0;
+            this.btn_viewLog.Location = new System.Drawing.Point(93, 429);
+            this.btn_viewLog.Name = "btn_viewLog";
+            this.btn_viewLog.Size = new System.Drawing.Size(75, 23);
+            this.btn_viewLog.TabIndex = 0;
+            this.btn_viewLog.Text = "View log";
+            this.btn_viewLog.UseVisualStyleBackColor = true;
+            this.btn_viewLog.Click += new System.EventHandler(this.btn_viewLog_Click);
             // 
             // UserInterface
             // 
@@ -257,6 +268,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_Archive);
+            this.Controls.Add(this.btn_viewLog);
             this.Controls.Add(this.btn_Preview);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserInterface";
@@ -290,6 +302,7 @@
         private System.Windows.Forms.Button btn_Preview;
         private System.Windows.Forms.Button btn_browseHistDir;
         private System.Windows.Forms.Button btn_EditDays;
+        private System.Windows.Forms.Button btn_viewLog;
     }
 }
 

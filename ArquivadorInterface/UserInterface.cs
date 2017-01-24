@@ -12,11 +12,15 @@ using System.Windows.Forms;
 using System.IO;
 using System.Collections.Generic;
 
+
 namespace ArquivadorUI
 {
     public partial class UserInterface : Form
     {
-        private static readonly log4net.ILog logger = log4net.LogManager.GetLogger("ArquivadorUI.Program.cs");
+        private static readonly log4net.ILog logger = log4net.LogManager.GetLogger("ArquivadorUI.UserInterface.cs");
+        //private readonly log4net.ILog logger = log4net.LogManager.GetLogger(this.GetType());
+
+
         private BusinessClass.Config sysConfig = new BusinessClass.Config();
 
         public UserInterface()
@@ -220,6 +224,27 @@ namespace ArquivadorUI
                 }
 
                 LoadSettings();
+            }
+        }
+
+        private void btn_viewLog_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show(this.GetType().ToString());
+
+            logger.Info("MENSAGEM DO TEO");
+
+            log4net.Appender.IAppender[] appenders = logger.Logger.Repository.GetAppenders();
+            // Check each appender this logger has
+            foreach (log4net.Appender.IAppender appender in appenders)
+            {
+                Type t = appender.GetType();
+                // Get the file name from the first FileAppender found and return
+                if (t.Equals(typeof(log4net.Appender.FileAppender)) || t.Equals(typeof(log4net.Appender.RollingFileAppender)))
+                {
+                    string filename = ((log4net.Appender.FileAppender)appender).File;
+                    System.Diagnostics.Process.Start(filename);
+                    break;
+                }
             }
         }
     }
